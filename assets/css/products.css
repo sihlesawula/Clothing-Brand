@@ -1,0 +1,14 @@
+
+.btn-color{
+    background-color:red;
+    color:#fff;
+    border-radius:5px;
+    border:none;
+    width:70px;
+    margin-right:20px;
+}
+
+.btn-color:hover{
+    background-color:orange;
+    color:black;
+}
