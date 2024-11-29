@@ -131,6 +131,48 @@ h6 {
   opacity: 1;
 }
 
+
+
+
+
+@media(max-width:320px){
+  
+.back-to-top {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #f82249;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #f94a6a;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+}
+
+
+
+
+
+
 /* Sections Header
 --------------------------------*/
 
