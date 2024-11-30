@@ -1,13 +1,13 @@
 .scrolling-slogan{
   position:relative;
   overflow:hidden;
-  white-space:nowrap;
+  white-space: nowrap;
   background-color:#f8f8f8;
   color:#333;
   padding:10px;
 }
 
-.scrolling-slogan {
+.scrolling-slogan p{
 display:inline-block;
   white-space:nowrap;
   animation:scroll-text 10s linear infinite;
