@@ -4,18 +4,20 @@
   white-space: nowrap;
   background-color:#f8f8f8;
   color:#333;
-  padding:10px;
+  padding:10px 0;
+  font-size:1.2rem;
 }
 
-.scrolling-slogan p{
+.scrolling-text {
 display:inline-block;
   white-space:nowrap;
-  animation:scroll-text 10s linear infinite;
+  position:absolute;
+  animation:scroll-left 10s linear infinite;
 }
 
-.@keyframes scroll-text{
+.@keyframes scroll-left{
   0%{
-    transform:translateX(-100%);
+    transform:translateX(100%);
   }
   100%{
     transform: translateX(-100%);
