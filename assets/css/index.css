@@ -412,43 +412,6 @@ h6 {
   text-align:center;
 }
 
-
-.video-container{
-  position:relative;
-  width:100%;
-  height:auto;
-  overflow:hidden;
-}
-
-.background-video{
-  position:absolute;
-  top:50%;
-  left:50%;
-  min-width:100%;
-  min-height:100%;
-  transform: translate(-50%, -50%);
-  object-fit:cover;
-  z-index: -1;
-}
-
-.content {
-  position:relative;
-  z-index:1;
-  color:white;
-  text-align:center;
-  top:50%;
-  transform:translateY(-50%);
-}
-
-.content h1{
-  font-size:3rem;
-  margin-bottom:10px;
-}
-
-.content p{
-  font-size:1.5rem;
-}
-
 section{
   padding:50px 20px;
   text-align:center;
