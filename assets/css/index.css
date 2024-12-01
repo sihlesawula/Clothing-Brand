@@ -1,32 +1,3 @@
-.scrolling-slogan{
-  position:relative;
-  overflow:hidden;
-  white-space: nowrap;
-  background-color:#f8f8f8;
-  color:#333;
-  padding:10px 0;
-  font-size:1.2rem;
-}
-
-.scrolling-text {
-display:inline-block;
-  white-space:nowrap;
-  position:absolute;
-  animation:scroll-left 10s linear infinite;
-}
-
-.@keyframes scroll-left{
-  0%{
-    transform:translateX(100%);
-  }
-  100%{
-    transform: translateX(-100%);
-  }
-}
-
-
-
-
 .logos-container{
   overflow:hidden;
   width:100%;
@@ -85,6 +56,31 @@ html, body {
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
+
+.slogan-container{
+  overflow:hidden;
+  white-space:nowrap;
+  background: #f4f4f4;
+  padding:10px 0;
+  position:relative;
+}
+
+.slogan{
+  display:inline-block;
+  white-space:nowrap;
+  position:relative;
+  animation:scroll 10s linear infinite;
+}
+
+@keyframes scroll{
+  0%{
+    transform:translateX(100%);
+  }
+  100%{
+    transform:translateX(-100%);
+  }
+}
+
 
 section {
   width:100%;
