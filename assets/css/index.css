@@ -1,5 +1,5 @@
 #background-video{
-  position:fixed;
+  position:absolute;
   top:0;
   left:0;
   width:100%;
@@ -65,7 +65,7 @@ html, body {
   margin:0;
   padding: 0;
   width: 100%;
-  height:auto;
+  height:100%;
   overflow-x:hidden;
   background: #fff;
   color: #2f3138;
