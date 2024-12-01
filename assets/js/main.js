@@ -1,3 +1,15 @@
+const slogan =
+document.querySelector('.slogan');
+
+slogan.addEventListener('mouseover', () 
+  => {
+    slogan.style.animationPlayState = 'paused';
+  });
+slogan.addEventListener('mouseout', () =>
+  {
+    slogan.style.animationPlayState = 'running';
+  })
+
 (function() {
   "use strict";
 
