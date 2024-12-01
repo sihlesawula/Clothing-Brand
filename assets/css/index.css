@@ -1,5 +1,5 @@
 .logos-container{
-  overflow:hidden;
+  overflow-x:scroll;
   width:100%;
   background-color: #f4f4f4;
   padding: 10px 0;
@@ -50,7 +50,7 @@ html, body {
   padding: 0;
   width: 100%;
   height:auto;
-  overflow:hidden;
+  overflow-x:hidden;
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
