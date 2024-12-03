@@ -1,3 +1,46 @@
+html, body {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height:100%;
+  overflow-x:hidden;
+  background: #fff;
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Make sure the video stays behind the content */
+  overflow: hidden;
+}
+
+/* Video styling */
+#background-video {
+  object-fit: cover; /* Ensures the video covers the entire area */
+  width: 100%;
+  height: 100%;
+}
+
+/* Content styling */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 200px; /* Adjust this as needed */
+}
+
+
+
+
+
 .logos-container{
   overflow:scroll;
   width:100%;
@@ -45,17 +88,6 @@ height:100vh;
 }
 
 
-html, body {
-  margin:0;
-  padding: 0;
-  width: 100%;
-  height:100%;
-  overflow-x:hidden;
-  background: #fff;
-  color: #2f3138;
-  font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
-}
 
 .image-container img {
   max-width: 100%;
