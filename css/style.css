@@ -27,35 +27,6 @@ body{
     background:#fff;
 }
 
-/* Container for the scrolling images */
-.scrolling-images-container {
-    width: 100%;
-    overflow: hidden; /* Hide the overflowing images */
-    position: absolute;
-}
-
-/* The images that will scroll horizontally */
-.scrolling-images {
-    display: flex;
-    animation: scrollImages 15s linear infinite; /* The scrolling animation */
-}
-
-/* Style for the individual images */
-.scrolling-images img {
-    width: 200px; /* Adjust this size based on your images */
-    height: auto;
-    margin-right: 20px; /* Space between images */
-}
-
-/* Animation to make images scroll */
-@keyframes scrollImages {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%); /* Move all images to the left */
-    }
-}
 
 
 p{
