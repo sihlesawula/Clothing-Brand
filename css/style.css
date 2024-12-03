@@ -31,7 +31,7 @@ body{
 .scrolling-images-container {
     width: 100%;
     overflow: hidden; /* Hide the overflowing images */
-    position: relative;
+    position: absolute;
 }
 
 /* The images that will scroll horizontally */
