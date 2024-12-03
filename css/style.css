@@ -24,8 +24,11 @@ img{
 
 body{
     color:var(--bg-color);
-    background:rgb(5, 2, 43);
+    background:#fff;
 }
+
+
+
 
 p{
     font-family:Arial, Helvetica, sans-serif;
