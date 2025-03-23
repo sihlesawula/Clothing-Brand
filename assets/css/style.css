@@ -494,11 +494,14 @@ body {
 .content h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
 }
 
 .content p {
   font-size: 16px;
   margin-bottom: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .btn {
@@ -507,8 +510,14 @@ body {
   background: #ff4500;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: bold;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #000;
+  text-decoration:underline;
 }
 
 @media (max-width: 768px) {
