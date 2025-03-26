@@ -2,8 +2,6 @@ const PAYFAST_MERCHANT_ID = '25459155'; // Replace with your PayFast merchant ID
 const PAYFAST_MERCHANT_KEY = '6cnc8ytucwfg1'; // Replace with your PayFast merchant key
 const PAYFAST_URL = 'https://www.payfast.co.za/eng/process'; // PayFast payment URL
 
-
-
 // Initialize cart from sessionStorage, or use an empty array if no cart exists
 let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
 
@@ -100,12 +98,13 @@ function checkout() {
     // Create a description of the items in the cart
     const itemDescription = cart.map(item => `${item.name} (${item.size}, ${item.color})`).join(', ');
 
-    // PayFast request params
+    // PayFast request params (Fix: Added 'item_name' field)
     const payfastParams = {
         merchant_id: PAYFAST_MERCHANT_ID,
         merchant_key: PAYFAST_MERCHANT_KEY,
         amount: totalAmount.toFixed(2),  // Total amount to be paid (product + delivery)
-        item_description: itemDescription,  // List of items
+        item_name: cart.length === 1 ? cart[0].name : "Multiple Items", // Fix: Required 'item_name'
+        item_description: itemDescription, // List of items (optional)
         return_url: window.location.href, // Return to the same page after successful payment
         cancel_url: window.location.href, // Return to the same page if the user cancels
         email_address: 'customer_email@example.com', // Replace with actual email address
