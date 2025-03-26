@@ -1,0 +1,286 @@
+/* Topbar Styles */
+.topbar {
+    background-color: #000; /* Black background */
+    color: white; /* White text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Left, Center, Right Text */
+.topbar .left,
+.topbar .center,
+.topbar .right {
+    flex: 1;
+    text-align: center;
+}
+
+/* Align left and right text */
+.topbar .left {
+    text-align: left;
+}
+
+.topbar .right {
+    text-align: right;
+}
+
+/* Adjusting for smaller screens (mobile responsiveness) */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topbar .left,
+    .topbar .center,
+    .topbar .right {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .topbar .left {
+        margin-bottom: 5px;
+    }
+
+    .topbar .right {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        font-size: 14px; /* Smaller font size on very small screens */
+    }
+}
+
+
+
+
+
+
+/* Topbar Styles */
+.topbar {
+    background-color: #000; /* Black background */
+    color: white; /* White text color */
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading Styles */
+.topbar .heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Adjusting for smaller screens (mobile responsiveness) */
+@media (max-width: 768px) {
+    .topbar {
+        padding: 15px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .topbar .heading {
+        font-size: 20px; /* Smaller font size on tablets */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        padding: 10px 5px; /* Further reduce padding on very small screens */
+    }
+
+    .topbar .heading {
+        font-size: 18px; /* Smaller font size on very small screens */
+    }
+}
+
+
+
+
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.product-section {
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adding space between items */
+}
+
+.product-card {
+    width: 23%; /* Each card will take 23% of the row, so it fits 4 per row */
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.color-options, .size-options, .delivery-options {
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Cart Styles */
+.cart-container {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-items p {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-cart {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.checkout-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .product-card {
+        width: 48%; /* 2 cards per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: 48%; /* 2 cards per row on smaller tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: 100%; /* 1 card per row on mobile */
+    }
+}
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black background */
+    color: white; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .company-name {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}

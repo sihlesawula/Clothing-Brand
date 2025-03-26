@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="topbar">
+        <div class="left">OFFENSIV.</div>
+        <div class="center">Welcome to Our Store</div>
+        <div class="right">Free Deliveries On Purchases Over R 700.00+</div>
+    </div>
+
+
+
+    <div class="topbar">
+        <div class="heading">OUR APPAREL</div>
+    </div>
+
+<!-- Cart Icon (button) to show the cart -->
+<button class="cart-icon" onclick="openCart()">🛒 Cart</button>
+
+<!-- Product Grid -->
+<section class="product-section">
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/Black Tee Shirt.png" alt="T-shirt" class="product-image">
+            <h3>Black T-shirt</h3>
+            <p class="price">R149.99</p>
+
+            <div class="color-options">
+                <label for="color1">Color: </label>
+                <select id="color1" class="color-selector" onchange="updateColor('product1')">
+                </select>
+            </div>
+
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days(R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/White Tee Shirt.png" alt="T-shirt" class="product-image">
+            <h3>White T-shirt</h3>
+            <p class="price">R149.99</p>
+
+            <div class="color-options">
+                <label for="color1">Color: </label>
+                <select id="color1" class="color-selector" onchange="updateColor('product1')">
+                </select>
+            </div>
+
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/Front-Black.png" alt="T-shirt" class="product-image">
+            <h3>Black Oversized T-shirt</h3>
+            <p class="price">R349.99</p>
+
+            <div class="color-options">
+                <label for="color1">Color: </label>
+                <select id="color1" class="color-selector" onchange="updateColor('product1')">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/Front-Beige.png" alt="T-shirt" class="product-image">
+            <h3>Beige Oversized T-shirt</h3>
+            <p class="price">R349.99</p>
+
+            <div class="color-options">
+                <label for="color1">Color: </label>
+                <select id="color1" class="color-selector" onchange="updateColor('product1')">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/Official Draft.png" alt="T-shirt" class="product-image">
+            <h3>Black Hoodie</h3>
+            <p class="price">R449.99</p>
+
+            <div class="color-options">
+                <label for="color1">Color: </label>
+                <select id="color1" class="color-selector" onchange="updateColor('product1')">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/Front-Single-Design.png" alt="T-shirt" class="product-image">
+            <h3>Beige Hoodie</h3>
+            <p class="price">R349.99</p>
+
+            <div class="color-options">
+                <label for="color1">Color: </label>
+                <select id="color1" class="color-selector" onchange="updateColor('product1')">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/Black Socks.png" alt="Socks" class="product-image">
+            <h3>Black Socks</h3>
+            <p class="price">R99.99</p>
+
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/White Socks.png" alt="Socks" class="product-image">
+            <h3>White Socks</h3>
+            <p class="price">R99.99</p>
+
+            <div class="color-options">
+                <label for="color1">Color: </label>
+                <select id="color1" class="color-selector" onchange="updateColor('product1')">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+
+        <!-- Product 1 -->
+        <div class="product-card" id="product1">
+            <img src="shop products/Black Cap (1).png" alt="Black Cap" class="product-image">
+            <h3>Black Cap</h3>
+            <p class="price">R149.99</p>
+
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+         <!-- Product 1 -->
+         <div class="product-card" id="product1">
+            <img src="shop products/Blue-Cap.png" alt="Black Cap" class="product-image">
+            <h3>Black Cap</h3>
+            <p class="price">R149.99</p>
+
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
+
+
+
+         <!-- Product 1 -->
+         <div class="product-card" id="product1">
+            <img src="shop products/Red-Cap.png" alt="Black Cap" class="product-image">
+            <h3>Red Cap</h3>
+            <p class="price">R149.99</p>
+
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">Free</option>
+                    <option value="standard">7-9 Days (R70)</option>
+                    <option value="express">3-5 Days (R150)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+    </div>
+</section>
+
+<!-- Cart Section -->
+<div class="cart-container">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" onclick="closeCart()">X</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="total">
+        <p>Total: R<span id="cart-total">0</span></p>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="footer-content">
+        <div class="company-name">OFFENSIV.</div>
+        <div class="copyright">© 2025 OFFENSIV. All rights reserved.</div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
