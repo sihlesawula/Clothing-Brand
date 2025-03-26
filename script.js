@@ -31,7 +31,7 @@ function updateCartDisplay() {
 // Function to add a product to the cart
 function addToCart(productId) {
     // Get the selected values (color, size, delivery)
-    const color = document.querySelector(`#${productId} .color-selector`).value;
+    const color = "N/A";
     const size = document.querySelector(`#${productId} .size-selector`).value;
     const delivery = document.querySelector(`#${productId} .delivery-selector`).value;
     const price = parseFloat(document.querySelector(`#${productId} .price`).textContent.replace('R', ''));
