@@ -106,8 +106,9 @@
 
 
 .cart-icon{
-    height:20px;
-    width:40px;
+    position: fixed;
+    height:30px;
+    width:60px;
     border-radius:10px;
 }
 body {
