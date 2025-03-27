@@ -46,7 +46,6 @@ function addToCart(productId) {
     const item = {
         id: productId,
         name,
-        color,
         size,
         delivery,
         price,
