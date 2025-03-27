@@ -364,6 +364,39 @@ body {
 
 
 
+.background-section {
+  background-image: url('/images/background-image.png'); /* Replace with your image path */
+  background-size: cover; /* Makes sure the image covers the section without stretching */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  height: 400px; /* Height of the section */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
+  padding: 20px; /* Optional padding */
+  color: #fff; /* White text color for visibility */
+}
+
+.background-section .content {
+  text-align: center; /* Centers the content inside */
+}
+
+@media (max-width: 768px) {
+  .background-section {
+      height: 300px; /* Adjust height for smaller screens */
+      padding: 10px; /* Less padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .background-section {
+      height: 250px; /* Even smaller height on very small screens */
+  }
+}
+
+
+
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
