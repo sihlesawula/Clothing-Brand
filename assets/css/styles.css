@@ -107,9 +107,11 @@
 
 .cart-icon{
     position: fixed;
-    height:30px;
+    height:40px;
     width:60px;
-    border-radius:10px;
+    border-radius:20px;
+    background-color: #fff;
+    border:#ff0000;
 }
 body {
     font-family: Arial, sans-serif;
