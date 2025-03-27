@@ -31,7 +31,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .top-bar {
@@ -77,11 +77,13 @@ body {
 
     .center-text {
         margin: 10px 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
     }
 
     .right-text {
         margin: 10px 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
@@ -92,10 +94,12 @@ body {
 
     .center-text {
         font-size: 16px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .right-text {
         font-size: 14px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
@@ -189,10 +193,12 @@ body {
 
   .navbar-links ul {
       flex-direction: column;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .navbar-links li {
       margin: 10px 0;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 
@@ -281,15 +287,18 @@ body {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .hero-subtitle {
         font-size: 1rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .hero-button {
         font-size: 0.85rem;
         padding: 10px 20px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
@@ -527,7 +536,7 @@ body {
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #000;
 }
 
@@ -594,10 +603,12 @@ body {
   .shipping-section {
     flex-direction: column;
     padding: 30px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .shipping-item {
     margin-bottom: 30px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
 
@@ -746,6 +757,7 @@ body {
 .footer-bottom p {
   font-size: 12px;
   color: #ccc;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Responsive design for smaller screens */
@@ -766,6 +778,7 @@ body {
 
   .footer-links li {
     margin-bottom: 10px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .footer-right {
@@ -779,10 +792,12 @@ body {
 
   .social-media li {
     margin-left: 15px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .footer-bottom p {
     font-size: 10px;
     color: #ccc;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 }
