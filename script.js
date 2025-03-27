@@ -28,14 +28,13 @@ function updateCartDisplay() {
     cartTotalElement.innerText = cartTotal.toFixed(2);
 }
 
-// Function to add a product to the cart
+
 function addToCart(productId) {
-    // Get the selected values (color, size, delivery)
     const size = document.querySelector(`#${productId} .size-selector`).value;
     const delivery = document.querySelector(`#${productId} .delivery-selector`).value;
     const price = parseFloat(document.querySelector(`#${productId} .price`).textContent.replace('R', ''));
 
-    // Delivery costs
+    
     let deliveryCost = 0;
     if (delivery === 'standard') deliveryCost = 60;
     if (delivery === 'express') deliveryCost = 120;
