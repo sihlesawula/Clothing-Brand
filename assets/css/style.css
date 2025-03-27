@@ -400,14 +400,10 @@ body {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 1;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
-.image-item:hover .image-button {
-  opacity: 1;
-}
 
 .large {
   grid-column: span 2;
