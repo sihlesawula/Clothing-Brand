@@ -365,7 +365,7 @@ body {
 
 
 .background-section {
-  background-image: url('/images/background-image.png'); /* Replace with your image path */
+  background-image: url('../images/background-image.png'); /* Replace with your image path */
   background-size: cover; /* Makes sure the image covers the section without stretching */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Ensures the image doesn't repeat */
