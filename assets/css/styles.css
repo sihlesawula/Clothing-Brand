@@ -105,14 +105,11 @@
 
 
 
-
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.cart-icon{
+    height:20px;
+    width:40px;
+    border-radius:10px;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -163,7 +160,8 @@ body {
 }
 
 .add-to-cart:hover {
-    background-color: #45a049;
+    background-color: #ff0000;
+    color: #000;
 }
 
 /* Cart Styles */
