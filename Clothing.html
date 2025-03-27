@@ -66,6 +66,37 @@
 
         <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
 
+
+
+
+         <!-- Product 1 -->
+         <div class="product-card" id="product1">
+            <img src="shop products/Black Tee Shirt.png" alt="T-shirt" class="product-image">
+            <h3>Black T-shirt</h3>
+            <p class="price">R1.99</p>
+            
+            <div class="size-options">
+                <label for="size1">Size: </label>
+                <select id="size1" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                </select>
+            </div>
+
+            <div class="delivery-options">
+                <label for="delivery1">Delivery: </label>
+                <select id="delivery1" class="delivery-selector" onchange="updateDelivery('product1')">
+                    <option value="free">No Delivery</option>
+                    <option value="standard">7-9 Days(R60)</option>
+                    <option value="express">3-5 Days (R120)</option>
+                </select>
+            </div>
+
+            <button class="add-to-cart" onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+
+        <!-- Repeat similar blocks for other products, e.g., product2, product3... -->
+
         <!-- Product 1 -->
         <div class="product-card" id="product2">
             <img src="shop products/White Tee Shirt.png" alt="T-shirt" class="product-image">
